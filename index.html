@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Pei Zhou | 周佩 is a Ph.D. candidate at The University of Hong Kong working on scalable generalist embodied systems, agentic robot learning, conditional policies, and parameter generation."
+    >
+    <title>Pei Zhou | 周佩</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pei Zhou homepage">Pei Zhou | 周佩</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <picture class="hero-image">
+          <source media="(max-width: 720px)" srcset="assets/hero-mobile.jpg">
+          <img src="assets/hero-wide.jpg" alt="Portrait of Pei Zhou by the waterfront">
+        </picture>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Generalist embodied systems and agentic robot learning</p>
+          <h1 id="hero-title">Pei Zhou | 周佩</h1>
+          <p class="hero-subtitle">
+            Ph.D. Candidate, Institute of Data Science,<br>
+            <span class="nowrap">The University of Hong Kong</span>
+          </p>
+          <p class="hero-copy">
+            I study scalable generalist embodied systems, with a focus on conditional
+            policy learning, parameter generation, and agentic execution for robust
+            long-horizon tasks.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="mailto:pezhou@connect.hku.hk">Email Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="about" aria-labelledby="about-title">
+        <div class="section-label">About</div>
+        <div class="section-body">
+          <h2 id="about-title">I build policy systems for robots that need to reason, act, and recover.</h2>
+          <p>
+            My research focuses on building <strong>scalable generalist embodied systems</strong>
+            that can adapt across <strong>tasks, environments, and embodiments</strong>.
+            I am especially interested in <strong>conditional policy learning</strong>,
+            <strong>parameter generation</strong>, and <strong>agentic systems</strong>
+            for <strong>robust long-horizon tasks</strong>.
+          </p>
+          <p>
+            More broadly, I am interested in how <strong>unified learning architectures</strong>
+            can organize <strong>heterogeneous embodied experience</strong> across
+            <strong>interaction</strong>, <strong>visual dynamics</strong>, and
+            <strong>language-grounded feedback</strong> into <strong>scalable objectives</strong>
+            for agents that perceive and act in the physical world.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-label">Research</div>
+        <div class="section-body">
+          <h2 id="research-title">Current focus</h2>
+          <div class="research-grid">
+            <article class="research-item">
+              <h3>Agentic robot learning</h3>
+              <p>
+                Designing execution loops where robots plan, act, verify outcomes,
+                diagnose failures, and improve through feedback-driven interaction.
+              </p>
+            </article>
+            <article class="research-item">
+              <h3>Conditional generalist policies</h3>
+              <p>
+                Learning policies that adapt from goals, instructions, observations, and
+                embodiment context while preserving a shared, reusable policy core.
+              </p>
+            </article>
+            <article class="research-item">
+              <h3>Parameter generation</h3>
+              <p>
+                Treating adaptation as the generation of task- or context-specific policy
+                parameters, connecting hypernetworks, optimization, and embodied control.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-label">Publications</div>
+        <div class="section-body">
+          <div class="section-heading-row">
+            <div>
+              <h2 id="publications-title">Selected publications</h2>
+              <p class="muted">
+                Representative work on embodied agents, policy generation, concept
+                discovery, and language-grounded manipulation.
+              </p>
+            </div>
+          </div>
+
+          <div class="publication-cards">
+            <article class="publication-card">
+              <img
+                src="assets/publications/dexholdem-teaser.jpg"
+                alt="DexHoldem system teaser showing poker-table perception and dexterous card manipulation"
+                loading="lazy"
+              >
+              <div>
+                <p class="venue">arXiv 2026 / Under Review</p>
+                <h3>DexHoldem: Playing Texas Hold'em with Dexterous Embodied System</h3>
+                <p class="authors">
+                  Feng Chen*, Tianzhe Chu*, Li Sun*, <strong>Pei Zhou*</strong>, Zhuxiu Xu,
+                  Shenghua Gao, Yuexiang Zhai, Yanchao Yang, and Yi Ma
+                </p>
+                <p>
+                  Builds an agentic system that plays Texas Hold'em in the physical world,
+                  turning card-chip perception, decision routing, and dexterous actions
+                  into a benchmark.
+                </p>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/abs/2605.18727" rel="noopener">Paper</a>
+                  <a href="https://dexholdem.github.io/Dexholdem/" rel="noopener">Project</a>
+                  <a href="https://github.com/DexHoldem/Dexholdem-Policy" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <img
+                src="assets/publications/disc-overview.png"
+                alt="DISC overview diagram for decoupling instruction from state-conditioned control"
+                loading="lazy"
+              >
+              <div>
+                <p class="venue">RSS 2026</p>
+                <h3>DISC: Decoupling Instruction from State-Conditioned Control via Policy Generation</h3>
+                <p class="authors">
+                  Hanxiang Ren*, <strong>Pei Zhou*</strong>, Xunzhe Zhou, and Yanchao Yang
+                </p>
+                <p>
+                  Decouples language-conditioned policy generation from vision-action
+                  control, reducing shortcuts where policies exploit visual-action
+                  correlations and ignore instructions.
+                </p>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/abs/2605.20856" rel="noopener">Paper</a>
+                  <a href="https://github.com/ReNginx/DISC" rel="noopener">Code</a>
+                  <a href="https://huggingface.co/ReNginx/DISC" rel="noopener">Checkpoints</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <img
+                src="assets/publications/hyper-goalnet-teaser.png"
+                alt="Hyper-GoalNet teaser diagram for goal-conditioned policy generation"
+                loading="lazy"
+              >
+              <div>
+                <p class="venue">NeurIPS 2025</p>
+                <h3>Hyper-GoalNet: Goal-Conditioned Manipulation Policy Learning with HyperNetworks</h3>
+                <p class="authors">
+                  <strong>Pei Zhou</strong>, Wanting Yao, Qian Luo, Xunzhe Zhou, and Yanchao Yang
+                </p>
+                <p>
+                  Generates goal-specific policy parameters and distance-aware
+                  representations so each policy adapts to its visual goal and estimates
+                  whether execution has reached it.
+                </p>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/abs/2512.00085" rel="noopener">Paper</a>
+                  <a href="https://github.com/wantingyao/hyper-goalnet" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <img
+                src="assets/publications/autocgp-teaser.jpeg"
+                alt="AutoCGP teaser showing concept-guided policies from demonstrations"
+                loading="lazy"
+              >
+              <div>
+                <p class="venue">ICLR 2025 Spotlight</p>
+                <h3>AutoCGP: Closed-Loop Concept-Guided Policies from Unlabeled Demonstrations</h3>
+                <p class="authors">
+                  <strong>Pei Zhou*</strong>, Ruizhe Liu*, Qian Luo*, Fan Wang, Yibing Song,
+                  and Yanchao Yang
+                </p>
+                <p>
+                  Discovers task events and subtask-level manipulation concepts from
+                  unlabeled demonstrations, then selects concepts online to switch
+                  behaviors during visuomotor execution.
+                </p>
+                <div class="pub-links">
+                  <a
+                    href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/6eed1e1d5ed52deee53234786998245e-Abstract-Conference.html"
+                    rel="noopener"
+                  >Paper</a>
+                  <a href="https://zrllrz.github.io/publication/AutoCGP" rel="noopener">Project</a>
+                  <a href="https://github.com/PeiZhou26/AutoCGP" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <img
+                src="assets/publications/maxmi-overview.jpg"
+                alt="MaxMI overview figure for manipulation concept discovery"
+                loading="lazy"
+              >
+              <div>
+                <p class="venue">ECCV 2024 Oral</p>
+                <h3>MaxMI: A Maximal Mutual Information Criterion for Manipulation Concept Discovery</h3>
+                <p class="authors"><strong>Pei Zhou</strong> and Yanchao Yang</p>
+                <p>
+                  Defines an information-theoretic criterion to discover manipulation
+                  concepts, enabling policies to predict future key states and final
+                  states during online execution.
+                </p>
+                <div class="pub-links">
+                  <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08845.pdf" rel="noopener">Paper</a>
+                  <a href="https://github.com/PeiZhou26/MaxMI" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="full-list" aria-labelledby="full-publications-title">
+            <h2 id="full-publications-title">Publication list</h2>
+
+            <h3>Under Review</h3>
+            <ol class="paper-list">
+              <li>
+                <span class="paper-title">DexHoldem: Playing Texas Hold'em with Dexterous Embodied System.</span>
+                Feng Chen*, Tianzhe Chu*, Li Sun*, <strong>Pei Zhou*</strong>, Zhuxiu Xu,
+                Shenghua Gao, Yuexiang Zhai, Yanchao Yang, and Yi Ma.
+                <em>arXiv</em>, 2026.
+                <span class="inline-links">
+                  <a href="https://dexholdem.github.io/Dexholdem/" rel="noopener">Project</a>
+                  <a href="https://arxiv.org/abs/2605.18727" rel="noopener">Paper</a>
+                  <a href="https://github.com/DexHoldem/Dexholdem-Policy" rel="noopener">Code</a>
+                </span>
+              </li>
+            </ol>
+
+            <h3>Published and Accepted Papers</h3>
+            <ol class="paper-list">
+              <li>
+                <span class="paper-title">DISC: Decoupling Instruction from State-Conditioned Control via Policy Generation.</span>
+                Hanxiang Ren*, <strong>Pei Zhou*</strong>, Xunzhe Zhou, and Yanchao Yang.
+                <em>Robotics: Science and Systems</em>, 2026.
+                <span class="inline-links">
+                  <a href="https://arxiv.org/abs/2605.20856" rel="noopener">Paper</a>
+                  <a href="https://github.com/ReNginx/DISC" rel="noopener">Code</a>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">Hyper-GoalNet: Goal-Conditioned Manipulation Policy Learning with HyperNetworks.</span>
+                <strong>Pei Zhou</strong>, Wanting Yao, Qian Luo, Xunzhe Zhou, and Yanchao Yang.
+                <em>NeurIPS</em>, 2025.
+                <span class="inline-links">
+                  <a href="https://arxiv.org/abs/2512.00085" rel="noopener">Paper</a>
+                  <a href="https://github.com/wantingyao/hyper-goalnet" rel="noopener">Code</a>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">AutoCGP: Closed-Loop Concept-Guided Policies from Unlabeled Demonstrations.</span>
+                <strong>Pei Zhou*</strong>, Ruizhe Liu*, Qian Luo*, Fan Wang, Yibing Song, and Yanchao Yang.
+                <em>ICLR</em>, 2025. Spotlight.
+                <span class="inline-links">
+                  <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/6eed1e1d5ed52deee53234786998245e-Abstract-Conference.html" rel="noopener">Paper</a>
+                  <a href="https://github.com/PeiZhou26/AutoCGP" rel="noopener">Code</a>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">MaxMI: A Maximal Mutual Information Criterion for Manipulation Concept Discovery.</span>
+                <strong>Pei Zhou</strong> and Yanchao Yang.
+                <em>ECCV</em>, 2024. Oral.
+                <span class="inline-links">
+                  <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08845.pdf" rel="noopener">Paper</a>
+                  <a href="https://github.com/PeiZhou26/MaxMI" rel="noopener">Code</a>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">HiMaCon: Discovering Hierarchical Manipulation Concepts from Unlabeled Multi-Modal Data.</span>
+                Ruizhe Liu, <strong>Pei Zhou</strong>, Qian Luo, Li Sun, Jun Cen, Yibing Song, and Yanchao Yang.
+                <em>NeurIPS</em>, 2025.
+                <span class="inline-links">
+                  <a href="https://arxiv.org/abs/2510.11321" rel="noopener">Paper</a>
+                  <a href="https://github.com/zrllrz/HiMaCon" rel="noopener">Code</a>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">HyPoGen: Optimization-Biased Hypernetworks for Generalizable Policy Generation.</span>
+                Hanxiang Ren, Li Sun, Xulong Wang, <strong>Pei Zhou</strong>, Zewen Wu,
+                Siyan Dong, Difan Zou, Youyi Zheng, and Yanchao Yang.
+                <em>ICLR</em>, 2025.
+                <span class="inline-links">
+                  <a href="https://openreview.net/forum?id=CJWMXqAnAy" rel="noopener">Paper</a>
+                  <a href="https://github.com/ReNginx/HyPoGen" rel="noopener">Code</a>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">SPEAR: Selective Preference Elicitation with Adaptive Rewards for VLM-Guided Robotic Manipulation.</span>
+                Zewen Wu, Ruizhe Liu, <strong>Pei Zhou</strong>, Feng Chen, and Yanchao Yang.
+                <em>IROS</em>, 2026.
+              </li>
+              <li>
+                <span class="paper-title">Geometric Entropy: When Trajectory Diversity Helps and Hurts in Imitation Learning.</span>
+                Qian Luo, Ruizhe Liu, <strong>Pei Zhou</strong>, Xunzhe Zhou, and Yanchao Yang.
+                <em>IROS</em>, 2026.
+                <span class="inline-links">
+                  <a href="https://arxiv.org/abs/2606.20871" rel="noopener">Paper</a>
+                  <a href="https://geometric-entropy.github.io/" rel="noopener">Project</a>
+                  <span class="coming-soon">Code Coming Soon</span>
+                </span>
+              </li>
+              <li>
+                <span class="paper-title">Learning Human-Humanoid Coordination for Collaborative Object Carrying.</span>
+                Yushi Du, Yixuan Li, Baoxiong Jia, Yutang Lin, <strong>Pei Zhou</strong>,
+                Wei Liang, Yanchao Yang, and Siyuan Huang.
+                <em>ICRA</em>, 2026.
+                <span class="inline-links">
+                  <a href="https://arxiv.org/abs/2510.14293" rel="noopener">Paper</a>
+                  <a href="https://yushi-du.github.io/COLA/" rel="noopener">Project</a>
+                  <a href="https://github.com/Yushi-Du/COLA_Code" rel="noopener">Code</a>
+                </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section two-column" id="education" aria-labelledby="education-title">
+        <div class="section-label">Education</div>
+        <div class="section-body">
+          <h2 id="education-title">Education</h2>
+          <div class="timeline">
+            <article>
+              <p class="time">2023-2027 expected</p>
+              <h3>The University of Hong Kong</h3>
+              <p>Ph.D. Candidate, Institute of Data Science</p>
+              <p class="muted">Supervisor: Prof. Yanchao Yang</p>
+            </article>
+            <article>
+              <p class="time">2021-2023</p>
+              <h3>University of California San Diego</h3>
+              <p>Master of Science in Electrical and Computer Engineering</p>
+            </article>
+            <article>
+              <p class="time">2017-2021</p>
+              <h3>Fudan University</h3>
+              <p>Bachelor of Engineering in Electrical Engineering</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="awards" aria-labelledby="awards-title">
+        <div class="section-label">Awards</div>
+        <div class="section-body">
+          <h2 id="awards-title">Honors and awards</h2>
+          <ul class="award-list">
+            <li><strong>2023 Best Poster Presenter Award</strong>, The University of Hong Kong Summer Research Program</li>
+            <li><strong>2023 Outstanding Graduate</strong>, University of California San Diego</li>
+            <li><strong>2021 Outstanding Graduate</strong>, Fudan University</li>
+            <li><strong>2019-2020 First-Class Scholarship</strong>, Fudan University</li>
+            <li><strong>2019-2020 Best 10 Students Award</strong>, School of Information Science and Engineering, Fudan University</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title">Open to research conversations on robot learning and embodied agents.</h2>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:pezhou@connect.hku.hk">pezhou@connect.hku.hk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright 2026 Pei Zhou. Last updated August 2026.</p>
+    </footer>
+  </body>
+</html>
