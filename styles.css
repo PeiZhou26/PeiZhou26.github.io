@@ -212,6 +212,13 @@ h3 {
   font-weight: 650;
 }
 
+.hero-affiliation {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+  font-weight: 500;
+}
+
 .hero-copy {
   margin: 0;
   color: rgba(255, 255, 255, 0.78);
